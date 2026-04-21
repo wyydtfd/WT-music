@@ -1,0 +1,27 @@
+{
+  "comment": "War Thunder 载具音乐文件夹配置",
+  "description": "优先特定载具文件夹，回退到国籍默认音乐",
+  "folder_structure": {
+    "specific_vehicle": "music/usa_fighter_p51d15/*.mp3",
+    "fallback_nationality": "music/usa/*.mp3",
+    "note": "程序先查找 music/{vehicle_name}/ 下的MP3文件，如果没找到则解析国籍代码查找 music/{country_code}/ 下的默认国籍配乐"
+  },
+  "nationality_mapping": {
+    "usa": "美国",
+    "ussr": "苏联",
+    "germany": "德国",
+    "uk": "英国",
+    "japan": "日本",
+    "china": "中国",
+    "italy": "意大利",
+    "france": "法国",
+    "sweden": "瑞典",
+    "israel": "以色列"
+  },
+  "instructions": {
+    "how_to_add_music": "在 music/ 文件夹下创建以载具名称命名的子文件夹放入特定音乐，或创建以国籍代码命名的文件夹放入默认国籍配乐",
+    "example_setup": "对于 'usa_fighter_p51d15'，优先 music/usa_fighter_p51d15/*.mp3，否则 music/usa/*.mp3",
+    "multiple_songs": "支持多个MP3文件，程序随机选择播放",
+    "mapping_needed": "国籍映射用于显示和日志，如需修改请编辑 main.py 中的 NATIONALITY_MAPPING 字典"
+  }
+}

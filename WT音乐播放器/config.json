@@ -1,0 +1,24 @@
+{
+  "api_url": "http://localhost:8111/indicators",
+  "poll_interval_seconds": 1,
+  "music_dir": "music",
+  "audio": {
+    "volume": 0.8,
+    "fade_in_ms": 1200,
+    "fade_out_ms": 800
+  },
+  "debug": {
+    "enabled": false,
+    "log_to_file": true,
+    "log_file": "logs/runtime.log"
+  },
+  "safety": {
+    "strict_mode": true,
+    "allowed_hosts": [
+      "localhost",
+      "127.0.0.1",
+      "::1"
+    ],
+    "required_port": 8111
+  }
+}
